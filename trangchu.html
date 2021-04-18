@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0-web/css/all.min.css">
+    <title>Chicken Shoes</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="logo">
+                <img src="" alt="">
+                <h2>Chicken Shoes</h2>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search. . .">
+                <div class="input-group-append">
+                  <button class="btn btn-success" type="submit">Go</button>
+                </div>
+              </div>
+            <div class="login">
+                <a href="#">ĐĂNG NHẬP</a>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giày Nam</a></li>
+                <li><a href="#">Giày Nữ</a></li>
+                <li><a href="#">Liên hệ </a></li>
+                <li><a href="#">Trang chủ</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+        <div class="main">
+        <!--Slider Show-->
+            <div class="slidershow">
+                <div class="slides">
+                    <input type="radio" name="bottom" id="bottom_1" id="bottom1">
+                    <input type="radio" name="bottom" id="bottom_2" id="bottom2">
+                    <input type="radio" name="bottom" id="bottom_3" id="bottom3">
+                    <input type="radio" name="bottom" id="bottom_4" id="bottom4">
+                    <input type="radio" name="bottom" id="bottom_5" id="bottom5">
+                    <!--Slide-->
+                    <div class="slide s1">
+                        <img src="./img/jordan.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/converse.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/mlb.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/domba.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/adidas.jpg" alt="">
+                    </div>
+                </div>
+                <!--Slide Bottom-->
+                <div class="navigation">
+                    <label for="bottom1" class="bar"></label>
+                    <label for="bottom2" class="bar"></label>
+                    <label for="bottom3" class="bar"></label>
+                    <label for="bottom4" class="bar"></label>
+                    <label for="bottom5" class="bar"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript img main-->
+    <script typy="text/javascript">
+        var counter=1;
+            setInterval(function(){
+                document.getElementById('bottom_' + counter).checked =true;
+                counter++;
+                if(counter > 5){
+                    counter =1;
+                }
+            }, 2000)
+    </script>
+    <!--Login form-->
+    <div class="overlay">
+    </div>
+</body>
+</html>
